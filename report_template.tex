@@ -1,0 +1,29 @@
+\documentclass{me_article}
+%\title{} 
+%\author{TAMSD08}
+%\date{2012-04-11}
+
+\hypersetup{
+	pdfauthor = {TAMSD08},
+	pdftitle = {report\_template.pdf},
+	pdfsubject = {report template},
+	%pdfkeywords = {},
+	%pdfcreator = {LaTeX},
+	%pdfproducer = {}
+}
+
+
+\begin{document}
+\graphicspath{{images/}}
+\ifpdf \DeclareGraphicsExtensions{.pdf, .jpg, .eps, .png} \else \DeclareGraphicsExtensions{.eps, .jpg} \fi
+
+
+% include this files
+\include{content/title}
+\tableofcontents
+\include{content/text}
+\include{content/delight}
+\bibliographystyle{IEEEtran}
+%\bibliographystyle{alpha}
+\bibliography{content/bib}
+\end{document} 
